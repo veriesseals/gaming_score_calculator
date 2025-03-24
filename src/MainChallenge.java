@@ -14,14 +14,15 @@ public class MainChallenge {
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus); // Implement arguments made from parameters set in Method 2. Variable name and value will make up the arguments here.
         System.out.println("The highScore is " + highScore);
 
-        // Do not redeclair variable, just change them on this step
+        // Do not redeclare variable, just change them on this step
         // --------------------------------------------------------------
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
-
-        calculateScore(gameOver, score, levelCompleted, bonus);
-
+        
+        // Output the second score using an expression rather than assigning it a variable
+        // --------------------------------------------------------------
+        System.out.println("The next highScore is " + calculateScore(gameOver, score, levelCompleted, bonus));
     }
     
     // Create our 2nd method below the first method
@@ -34,7 +35,7 @@ public class MainChallenge {
             finalScore += (levelCompleted * bonus);
             finalScore += 1000;
         }
-        
+        // add a return
         return finalScore;
     }
 }
