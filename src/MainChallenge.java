@@ -34,9 +34,7 @@ public class MainChallenge {
             finalScore += (levelCompleted * bonus);
             finalScore += 1000;
         }
-
-        return {
-            finalScore;
-        }
+        
+        return finalScore;
     }
 }
