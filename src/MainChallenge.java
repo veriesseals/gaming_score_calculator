@@ -41,24 +41,4 @@ public class MainChallenge {
         // add a return
         return finalScore;
     }
-    
-    // High Score Position Method
-    // --------------------------------------------------------------
-    public static int highScorePosition(int playerScore) {
-        int finalScore = playerScore; 
-            if (finalScore >= 1000) {
-                System.out.println(playerScore);
-                return playerScore;
-            } else if (playerScore >= 500 && playerScore < 1000) {
-                System.out.println(playerScore);
-            } else if ( playerScore >= 100 && playerScore < 500) {
-                System.out.println(playerScore);
-                return playerScore;
-            } else {
-                System.out.println(playerScore);
-                return playerScore;
-            }
-            System.out.println(playerScore);
-        return playerScore;
-    }
 }
